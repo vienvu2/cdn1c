@@ -6,21 +6,23 @@ import Form from './Form.js';
 
 console.log('1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.');
 
-const bannerDom = document.getElementById('1c-banner');
-if (bannerDom) {
-	const banner = createRoot(bannerDom);
-	console.log('1C - bannerDom >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.', bannerDom);
-	banner.render(<Banner />);
-}
+setInterval(() => {
+	const bannerDom = document.getElementById('1c-banner');
+	if (bannerDom) {
+		const banner = createRoot(bannerDom);
+		console.log('1C - bannerDom >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.', bannerDom);
+		banner.render(<Banner />);
+	}
 
-const popupDom = document.getElementById('1c-popup');
-if (popupDom) {
-	const popup = createRoot(popupDom);
-	popup.render(<Popup />);
-}
+	const popupDom = document.getElementById('1c-popup');
+	if (popupDom) {
+		const popup = createRoot(popupDom);
+		popup.render(<Popup />);
+	}
 
-const formDom = document.getElementById('1c-form');
-if (formDom) {
-	const form = createRoot(formDom);
-	form.render(<Form />);
-}
+	const formDom = document.getElementById('1c-form');
+	if (formDom) {
+		const form = createRoot(formDom);
+		form.render(<Form />);
+	}
+}, 1000);
