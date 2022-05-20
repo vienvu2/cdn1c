@@ -5,7 +5,7 @@ import Popup from './Popup.js';
 import Form from './Form.js';
 
 
-setInterval(() => {
+setTimeout(() => {
 	console.log('1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.');
 	const bannerDom = document.getElementById('1c-banner');
 	if (bannerDom) {
@@ -25,4 +25,4 @@ setInterval(() => {
 		const form = createRoot(formDom);
 		form.render(<Form />);
 	}
-}, 1000);
+}, 10000);
