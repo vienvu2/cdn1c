@@ -6,7 +6,7 @@ import Form from './Form.js';
 
 console.log('1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.');
 
-setTimeout(() => {
+setInterval(() => {
 	const bannerDom = document.getElementById('1c-banner');
 	if (bannerDom) {
 		const banner = createRoot(bannerDom);
@@ -25,4 +25,4 @@ setTimeout(() => {
 		const form = createRoot(formDom);
 		form.render(<Form />);
 	}
-}, 3000);
+}, 1000);
