@@ -6,8 +6,8 @@ import Form from './Form.js';
 
 
 setInterval(() => {
-console.log('1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.');
-const bannerDom = document.getElementById('1c-banner');
+	console.log('1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.');
+	const bannerDom = document.getElementById('1c-banner');
 	if (bannerDom) {
 		const banner = createRoot(bannerDom);
 		console.log('1C - bannerDom >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.', bannerDom);
