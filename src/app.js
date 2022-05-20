@@ -4,7 +4,10 @@ import Banner from './Banner.js';
 import Popup from './Popup.js';
 import Form from './Form.js';
 
+console.log("1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.")
+
 const bannerDom = document.getElementById('1c-banner');
+console.log("1C - bannerDom >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.", bannerDom)
 const banner = createRoot(bannerDom);
 
 banner.render(<Banner />);
