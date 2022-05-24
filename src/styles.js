@@ -39,6 +39,7 @@ const PopupWrap = styled.div`
 	bottom: 0;
 	background: #0009;
 	right: 0;
+	z-index: 99999;
 	display: flex;
 	align-items: center;
 	justify-content: center;
