@@ -5,7 +5,7 @@ export default {
   entry: path.resolve("./src/app.js"),
   output: {
     path: path.resolve( "dist"),
-    filename: "index.bundle003.js",
+    filename: "index.bundle004.js",
     clean: true,
   },
   /* đoạn code sau sẽ load các gói babel vào webpack */
