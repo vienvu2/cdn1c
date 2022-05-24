@@ -5,24 +5,23 @@ import Popup from './Popup.js';
 import Form from './Form.js';
 
 
-setTimeout(() => {
-	console.log('1C - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.');
+setInterval(() => {
 	const bannerDom = document.getElementById('1c-banner');
-	if (bannerDom) {
+	if (bannerDom && bannerDom.innerHTML == '') {
 		const banner = createRoot(bannerDom);
 		console.log('1C - bannerDom >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.', bannerDom);
 		banner.render(<Banner />);
 	}
 
 	const popupDom = document.getElementById('1c-popup');
-	if (popupDom) {
+	if (popupDom && popupDom.innerHTML == '') {
 		const popup = createRoot(popupDom);
 		popup.render(<Popup />);
 	}
 
 	const formDom = document.getElementById('1c-form');
-	if (formDom) {
+	if (formDom && formDom.innerHTML == '') {
 		const form = createRoot(formDom);
 		form.render(<Form />);
 	}
-}, 10000);
+}, 1000);
